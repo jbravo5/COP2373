@@ -5,7 +5,7 @@ Cinema Ticket Pre-Sale Application
 - Repeats until tickets are sold out
 """
 
-MAX_TICKETS_TOTAL = 20
+MAX_TICKETS_TOTAL = 10
 MAX_TICKETS_PER_BUYER = 4
 
 
