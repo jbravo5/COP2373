@@ -45,7 +45,7 @@ def apply_purchase(requested: int, remaining: int) -> int:
 
 def main() -> None:
     remaining = MAX_TICKETS_TOTAL
-    buyers = 0  # accumulator for total number of buyers (successful purchases)
+    total_buyers = 0  # accumulator for total number of buyers (successful purchases)
 
     print("Welcome! Cinema ticket pre-sale is now open.")
     print(f"Total tickets available: {MAX_TICKETS_TOTAL}")
@@ -58,10 +58,10 @@ def main() -> None:
         # If statement used to count buyers only when a valid purchase occurs
         if requested >= 1:
             remaining = apply_purchase(requested, remaining)
-            buyers += 1  # accumulator update
+            total_buyers += 1  # accumulator update
 
     print("\nSOLD OUT!")
-    print(f"Total number of buyers: {buyers}")
+    print(f"Total number of buyers: {total_buyers}")
 
 
 if __name__ == "__main__":
