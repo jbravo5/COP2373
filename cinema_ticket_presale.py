@@ -12,7 +12,7 @@ MAX_TICKETS_PER_BUYER = 4
 def get_ticket_request(remaining: int) -> int:
     """Prompt the user for a ticket request and return a validated integer."""
     while True:
-        raw = input(f"How many tickets would you like to buy? (1-{MAX_TICKETS_PER_BUYER}) "
+        raw = input(f"Enter how many tickets you want to purchase? (1-{MAX_TICKETS_PER_BUYER}) "
                     f"[Remaining: {remaining}]: ").strip()
 
         # Basic validation: must be an integer
